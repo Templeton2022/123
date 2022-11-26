@@ -1,0 +1,17 @@
+server:
+  port: 9091
+#  ssl:
+#    key-store: classpath:server.pfx
+#    key-store-password: EzVXJiiX
+#    key-store-type: PKCS12
+#    enabled: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-bp1p1h2125511x0e9zo.mysql.rds.aliyuncs.com:3306/yuanshendb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: Root123456__
+
+mybatis:
+  type-aliases-package: com.templeton.yuanshen.pojo
+  mapper-locations: classpath:mappers/*.xml

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.templeton.yuanshen.dao.TalentDAO">
+    <select id="listTalentBO" parameterType="int" resultType="TalentBO">
+        select
+        green_talentbook, blue_talentbook, purple_talentbook, grey_monsterdrop, green_monsterdrop,
+        blue_monsterdrop, week_drop, crown, mora
+        from talent_info
+        where level <![CDATA[ <= ]]> #{maxTalentLevel}
+    </select>
+</mapper>
