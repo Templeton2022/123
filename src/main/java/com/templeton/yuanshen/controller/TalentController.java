@@ -70,6 +70,7 @@ public class TalentController {
 //            return ResultFactory.Success(message);
         }catch (Exception e){
             // 已在工具类中抛出异常
+            System.out.println("123");
 //            return ResultFactory.Internal_Server_Error("服务器内部错误，请联系管理员！");
         }
     }
